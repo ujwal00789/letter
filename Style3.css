@@ -136,3 +136,15 @@ body {
   right: -40px;
   border-radius: 50px;
 }
+
+
+.envelope:hover .letter {
+  transform: translateY(-100px);
+  z-index: 4; /* higher than .front */
+}
+
+
+.envelope:hover .front,
+.envelope:hover .top {
+  pointer-events: none;
+}
